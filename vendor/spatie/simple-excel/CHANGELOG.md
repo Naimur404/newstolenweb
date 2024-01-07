@@ -2,6 +2,36 @@
 
 All notable changes to `simple-excel` will be documented in this file
 
+## 3.2.1 - 2023-11-09
+
+### What's Changed
+
+- Add some documentation to explain how to change column widths by @dakira in https://github.com/spatie/simple-excel/pull/146
+- Update README.md by @EkoGit-777 in https://github.com/spatie/simple-excel/pull/148
+- Add documentation for closing the file manually when necessary by @RayDabbah in https://github.com/spatie/simple-excel/pull/155
+- Fix openspout backwards compatibility change that stops parsing formulas by @dakira in https://github.com/spatie/simple-excel/pull/156
+
+### New Contributors
+
+- @EkoGit-777 made their first contribution in https://github.com/spatie/simple-excel/pull/148
+- @RayDabbah made their first contribution in https://github.com/spatie/simple-excel/pull/155
+
+**Full Changelog**: https://github.com/spatie/simple-excel/compare/3.2.0...3.2.1
+
+## 3.2.0 - 2023-03-13
+
+### What's Changed
+
+- Fix workflow badge in README by @nelson6e65 in https://github.com/spatie/simple-excel/pull/135
+- Allow `shouldAddBom` in `streamDownload` by @mariomka in https://github.com/spatie/simple-excel/pull/141
+
+### New Contributors
+
+- @nelson6e65 made their first contribution in https://github.com/spatie/simple-excel/pull/135
+- @mariomka made their first contribution in https://github.com/spatie/simple-excel/pull/141
+
+**Full Changelog**: https://github.com/spatie/simple-excel/compare/3.1.0...3.2.0
+
 ## 3.1.0 - 2023-01-20
 
 ### What's Changed

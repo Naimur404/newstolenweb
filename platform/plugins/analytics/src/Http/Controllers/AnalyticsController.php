@@ -216,11 +216,7 @@ class AnalyticsController extends BaseController
             $browsers = Analytics::fetchTopBrowsers($period);
 
             return $response->setData(view('plugins/analytics::widgets.browser', compact('browsers'))->render());
-        } catch (InvalidConfiguration $exception) {
-            return $response
-                ->setError()
-                ->setMessage($exception->getMessage() ?: trans('plugins/analytics::analytics.wrong_configuration'));
-        } catch (Exception $exception) {
+        }  catch (Exception $exception) {
             return $response
                 ->setError()
                 ->setMessage($exception->getMessage());

@@ -4,6 +4,8 @@ namespace Spatie\SimpleExcel;
 
 use Illuminate\Support\LazyCollection;
 use InvalidArgumentException;
+use OpenSpout\Common\Entity\Cell;
+use OpenSpout\Common\Entity\Cell\FormulaCell;
 use OpenSpout\Common\Entity\Row;
 use OpenSpout\Reader\CSV\Options as CSVOptions;
 use OpenSpout\Reader\CSV\Reader as CSVReader;
@@ -21,6 +23,7 @@ class SimpleExcelReader
     protected bool $processHeader = true;
     protected bool $trimHeader = false;
     protected bool $headersToSnakeCase = false;
+    protected bool $parseFormulas = true;
     protected ?string $trimHeaderCharacters = null;
     protected mixed $formatHeadersUsing = null;
     protected ?array $headers = null;
@@ -122,6 +125,13 @@ class SimpleExcelReader
         return $this;
     }
 
+    public function keepFormulas()
+    {
+        $this->parseFormulas = false;
+
+        return $this;
+    }
+
     public function getReader(): ReaderInterface
     {
         return $this->reader;
@@ -140,6 +150,21 @@ class SimpleExcelReader
         $this->useLimit = true;
 
         return $this;
+    }
+
+    public function hasSheet(string $sheetName): bool
+    {
+        $this->setReader();
+
+        $this->reader->open($this->path);
+
+        foreach ($this->reader->getSheetIterator() as $sheet) {
+            if ($sheetName != "" && $sheetName === $sheet->getName()) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     public function fromSheet(int $sheetNumber): SimpleExcelReader
@@ -284,7 +309,12 @@ class SimpleExcelReader
 
     protected function getValueFromRow(Row $row): array
     {
-        $values = $row->toArray();
+        $values = array_map(function (Cell $cell) {
+            return $cell instanceof FormulaCell && $this->parseFormulas
+                ? $cell->getComputedValue()
+                : $cell->getValue();
+        }, $row->getCells());
+
         ksort($values);
 
         $headers = $this->customHeaders ?: $this->headers;

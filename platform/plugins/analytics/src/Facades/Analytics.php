@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static void mixin(object $mixin, bool $replace = true)
  * @method static bool hasMacro(string $name)
  * @method static void flushMacros()
- *
+ *x
  * @see \Botble\Analytics\Analytics
  */
 class Analytics extends Facade

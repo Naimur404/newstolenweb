@@ -37,23 +37,23 @@ use Throwable;
 
 class SettingController extends BaseController
 {
-    // public function getOptions()
-    // {
-    //     PageTitle::setTitle(trans('core/setting::setting.title'));
+    public function getOptions()
+    {
+        PageTitle::setTitle(trans('core/setting::setting.title'));
 
-    //     Assets::addScripts(['jquery-validation', 'form-validation'])
-    //         ->addScriptsDirectly([
-    //             'vendor/core/core/setting/js/setting.js',
-    //             // 'vendor/core/core/setting/js/verify-license.js',
-    //         ])
-    //         ->addStylesDirectly('vendor/core/core/setting/css/setting.css');
+        Assets::addScripts(['jquery-validation', 'form-validation'])
+            ->addScriptsDirectly([
+                'vendor/core/core/setting/js/setting.js',
+                // 'vendor/core/core/setting/js/verify-license.js',
+            ])
+            ->addStylesDirectly('vendor/core/core/setting/css/setting.css');
 
-    //     Assets::usingVueJS();
+        Assets::usingVueJS();
 
-    //     $jsValidation = JsValidator::formRequest(SettingRequest::class);
+        $jsValidation = JsValidator::formRequest(SettingRequest::class);
 
-    //     return view('core/setting::index', compact('jsValidation'));
-    // }
+        return view('core/setting::index', compact('jsValidation'));
+    }
 
     public function postEdit(SettingRequest $request, BaseHttpResponse $response)
     {

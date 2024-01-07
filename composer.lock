@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.295.6",
+            "version": "3.295.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "9b0b2daf46d5e6a4600575917cea0764e4dbb6b5"
+                "reference": "e3ba36c6e52dce373064fbb1741547828235425f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9b0b2daf46d5e6a4600575917cea0764e4dbb6b5",
-                "reference": "9b0b2daf46d5e6a4600575917cea0764e4dbb6b5",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e3ba36c6e52dce373064fbb1741547828235425f",
+                "reference": "e3ba36c6e52dce373064fbb1741547828235425f",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.295.6"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.295.7"
             },
-            "time": "2024-01-04T19:43:02+00:00"
+            "time": "2024-01-05T19:10:48+00:00"
         },
         {
             "name": "barryvdh/laravel-dompdf",
@@ -2493,20 +2493,20 @@
         },
         {
             "name": "google/longrunning",
-            "version": "v0.2.6",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/php-longrunning.git",
-                "reference": "9689b4db54cf4cf8186118d9d59aa9ba35bb5842"
+                "reference": "c21cb8f8794f724ca672dad94bf7d406e62476b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/php-longrunning/zipball/9689b4db54cf4cf8186118d9d59aa9ba35bb5842",
-                "reference": "9689b4db54cf4cf8186118d9d59aa9ba35bb5842",
+                "url": "https://api.github.com/repos/googleapis/php-longrunning/zipball/c21cb8f8794f724ca672dad94bf7d406e62476b9",
+                "reference": "c21cb8f8794f724ca672dad94bf7d406e62476b9",
                 "shasum": ""
             },
             "require-dev": {
-                "google/gax": "^1.13.0",
+                "google/gax": "^1.26.0",
                 "phpunit/phpunit": "^9.0"
             },
             "type": "library",
@@ -2531,9 +2531,9 @@
             ],
             "description": "Google LongRunning Client for PHP",
             "support": {
-                "source": "https://github.com/googleapis/php-longrunning/tree/v0.2.6"
+                "source": "https://github.com/googleapis/php-longrunning/tree/v0.3.0"
             },
-            "time": "2023-04-21T14:12:59+00:00"
+            "time": "2024-01-05T17:46:51+00:00"
         },
         {
             "name": "google/protobuf",
@@ -12486,16 +12486,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.51",
+            "version": "1.10.54",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "5082fa72dc13944578806ca1196a385818d8b077"
+                "reference": "3e25f279dada0adc14ffd7bad09af2e2fc3523bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/5082fa72dc13944578806ca1196a385818d8b077",
-                "reference": "5082fa72dc13944578806ca1196a385818d8b077",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/3e25f279dada0adc14ffd7bad09af2e2fc3523bb",
+                "reference": "3e25f279dada0adc14ffd7bad09af2e2fc3523bb",
                 "shasum": ""
             },
             "require": {
@@ -12544,7 +12544,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-04T21:16:30+00:00"
+            "time": "2024-01-05T15:50:47+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
