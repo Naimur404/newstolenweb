@@ -4,7 +4,7 @@
         <h5>{!! BaseHelper::clean($flashSale->getMetaData('subtitle', true)) !!}</h5>
     </div>
     <div class="deal-content">
-        @if (EcommerceHelper::isReviewEnabled())
+        {{-- @if (EcommerceHelper::isReviewEnabled())
             <h6 class="product-title mb-0 text-truncate"><a href="{{ $product->url }}">{{ $product->name }}</a></h6>
             <div class="rating_wrap mb-20">
                 <div class="rating">
@@ -14,7 +14,7 @@
             </div>
         @else
             <h6 class="product-title"><a href="{{ $product->url }}">{{ $product->name }}</a></h6>
-        @endif
+        @endif --}}
 
         <div class="product-price"><span class="new-price">{{ format_price($product->front_sale_price_with_taxes) }}</span>
             @if ($product->front_sale_price !== $product->price)

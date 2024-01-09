@@ -26,7 +26,7 @@
             <div class="tab-pane fade show active" id="product-categories-product" role="tabpanel" aria-labelledby="product-categories-product-tab">
                 <div class="row product-grid-4">
                     @foreach($products as $product)
-                        <div class="col-lg-3 col-md-4 col-12 col-sm-6">
+                        <div class="col-lg-3 col-md-4 col-6 col-sm-6">
                             @include(Theme::getThemeNamespace() . '::views.ecommerce.includes.product-item', compact('product'))
                         </div>
                     @endforeach

@@ -3,7 +3,7 @@
         <h3 class="section-title style-1 mb-30">{{ $shortcode->title }}</h3>
         <div class="row">
             @foreach($products as $product)
-                <div class="col-lg-3 col-md-4 col-12 col-sm-6">
+                <div class="col-lg-3 col-md-4 col-6 col-sm-6">
                     @include(Theme::getThemeNamespace() . '::views.ecommerce.includes.product-item', ['product' => $product])
                 </div>
             @endforeach

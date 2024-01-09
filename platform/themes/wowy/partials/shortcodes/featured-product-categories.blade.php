@@ -1,3 +1,4 @@
+
 <section class="popular-categories bg-grey-9 section-padding-60" id="featured-product-categories">
     <div class="container wow fadeIn animated">
         <h3 class="section-title mb-30">{{ $title }}</h3>
