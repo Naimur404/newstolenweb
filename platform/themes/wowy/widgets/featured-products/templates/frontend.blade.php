@@ -19,13 +19,13 @@
                         <span class="old-price"><small><del>{{ format_price($item->price_with_taxes) }}</del></small></span>
                     @endif
                 </p>
-                @if (EcommerceHelper::isReviewEnabled())
+                {{-- @if (EcommerceHelper::isReviewEnabled())
                     <div class="rating_wrap">
                         <div class="rating">
                             <div class="product_rate" style="width: {{ $item->reviews_avg * 20 }}%"></div>
                         </div>
                     </div>
-                @endif
+                @endif --}}
             </div>
         </div>
     @endforeach

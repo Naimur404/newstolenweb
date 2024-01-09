@@ -31,7 +31,7 @@
 
 <div class="row product-grid">
     @forelse ($products as $product)
-        <div class="@if($layout === 'product-full-width') col-xxl-3 col-xl-3 @endif col-lg-4 col-md-4 col-12 col-sm-6">
+        <div class="@if($layout === 'product-full-width') col-xxl-3 col-xl-3 @endif col-lg-4 col-md-4 col-6 col-sm-6">
             @include(Theme::getThemeNamespace() . '::views.ecommerce.includes.product-item', compact('product'))
         </div>
     @empty

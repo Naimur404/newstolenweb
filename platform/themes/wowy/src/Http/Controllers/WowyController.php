@@ -114,7 +114,7 @@ class WowyController extends PublicController
 
         $data = [];
         foreach ($products as $product) {
-            $data[] = '<div class="col-lg-3 col-md-4 col-12 col-sm-6">' . view(
+            $data[] = '<div class="col-lg-3 col-md-4 col-6 col-sm-6">' . view(
                 Theme::getThemeNamespace() . '::views.ecommerce.includes.product-item',
                 compact('product')
             )->render() . '</div>';
@@ -161,7 +161,7 @@ class WowyController extends PublicController
 
         $data = [];
         foreach ($products as $product) {
-            $data[] = '<div class="col-lg-3 col-md-4 col-12 col-sm-6">' . view(
+            $data[] = '<div class="col-lg-3 col-md-4 col-6 col-sm-6">' . view(
                 Theme::getThemeNamespace() . '::views.ecommerce.includes.product-item',
                 compact('product')
             )->render() . '</div>';
