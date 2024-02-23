@@ -343,7 +343,7 @@
                 <h3 class="section-title style-1 mb-30">{{ __('You may also like') }}</h3>
             </div>
             @foreach($crossSellProducts as $crossProduct)
-                <div class="col-lg-{{ 12 / ($layout == 'product-full-width' ? 4 : 3) }} col-md-4 col-12 col-sm-6">
+                <div class="col-lg-{{ 12 / ($layout == 'product-full-width' ? 4 : 3) }} col-md-4 col-6 col-sm-6">
                     @include(Theme::getThemeNamespace() . '::views.ecommerce.includes.product-item', ['product' => $crossProduct])
                 </div>
             @endforeach
@@ -355,7 +355,7 @@
             <h3 class="section-title style-1 mb-30">{{ __('Related products') }}</h3>
         </div>
         @foreach(get_related_products($product, 6) as $relatedProduct)
-            <div class="col-lg-{{ 12 / ($layout == 'product-full-width' ? 4 : 3) }} col-md-4 col-12 col-sm-6">
+            <div class="col-lg-{{ 12 / ($layout == 'product-full-width' ? 4 : 3) }} col-md-4 col-6 col-sm-6">
                 @include(Theme::getThemeNamespace() . '::views.ecommerce.includes.product-item', ['product' => $relatedProduct])
             </div>
         @endforeach
